@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# system_health.sh - Check CPU, memory, and disk usage
+# system_health.sh - Checks CPU, memory, and disk usage
 
 echo "===== System Health Report ====="
 echo "Date: $(date)"
