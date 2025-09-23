@@ -7,6 +7,8 @@ scripts/
   - system_health.sh : Monitor CPU, memory, disk
   - service_checker.sh : Check essential services
   - log_cleaner.sh : Clean old logs
+  - disk_alert.sh : check disc usage
+  - user_audit.sh : check number of user logged in
 
 ## Features
 - Monitor system resources
