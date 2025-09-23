@@ -12,6 +12,8 @@ scripts/
 - Monitor system resources
 - Check services (nginx)
 - Clean logs automatically
+- Disc Alert
+- User audit
 - Practice Git branching, tagging, submodules
 
 =====================================
@@ -39,6 +41,9 @@ This repository contains useful **Bash scripts** for DevOps automation and Linux
    - sends mail alert and wall alert to all users when disc usage exists 80%
    - Helps for logging and monitoring
 
+5. **user_audit.sh**
+   - check number of user logged in
+
 ---
 
 ## How to Use
@@ -55,7 +60,7 @@ chmod +x *.sh
 ./service_checker.sh
 ./log_cleaner.sh
 ./disk_alert.sh
-
+./user_audit.sh
 
 #To setup cronjob to run the script automatically every 5mins
 crontab -e #To edit and setup cronjob
