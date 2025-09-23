@@ -35,6 +35,10 @@ This repository contains useful **Bash scripts** for DevOps automation and Linux
    - Deletes `.log` files older than 7 days from a log directory.
    - Helps free up disk space automatically.
 
+4. **disk_alert.sh**
+   - sends mail alert and wall alert to all users when disc usage exists 80%
+   - Helps for logging and monitoring
+
 ---
 
 ## How to Use
@@ -50,4 +54,10 @@ chmod +x *.sh
 ./healthcheck.sh
 ./service_checker.sh
 ./log_cleaner.sh
+./disk_alert.sh
+
+
+#To setup cronjob to run the script automatically every 5mins
+crontab -e #To edit and setup cronjob
+*/5 * * * * /home/ubuntu/devops-shell-scripts/scripts/disk_usage_alert.sh
 
